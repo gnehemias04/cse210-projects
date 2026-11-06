@@ -3,32 +3,42 @@ using System;
 class Program
 {
     static void Main(string[] args)
+
     {
-
-        Random randomGenerator = new Random();
-        int magicNumber = randomGenerator.Next(1, 50);
-        bool guessed = false;
-
-        while (guessed == false)
+        string playAgain = "yes";
+        while (playAgain == "yes" || playAgain == "YES" || playAgain == "Yes" || playAgain == "yeah")
         {
-            Console.Write("What is your guess? ");
-            string guess = Console.ReadLine();
-            int guessNumer = int.Parse(guess);
+            Random randomGenerator = new Random();
+            int magicNumber = randomGenerator.Next(1, 101);
+            bool guessed = false;
+            int guesses = 0;
 
-            if (guessNumer == magicNumber)
+
+            while (guessed == false)
             {
-                Console.WriteLine("You guessed it!");
-                guessed = true;
+                Console.Write("What is your guess? ");
+                string guess = Console.ReadLine();
+                int guessNumer = int.Parse(guess);
+                guesses = guesses + 1;
+
+                if (guessNumer == magicNumber)
+                {
+                    Console.WriteLine("You guessed it!");
+                    guessed = true;
+                }
+                else if (guessNumer > magicNumber)
+                {
+                    Console.WriteLine("Lower");
+                }
+                else if (guessNumer < magicNumber)
+                {
+                    Console.WriteLine("Higher");
+                }
             }
-            else if (guessNumer > magicNumber)
-            {
-                Console.WriteLine("Lower");
-            }
-            else if (guessNumer < magicNumber)
-            {
-                Console.WriteLine("Higher");
-            }
+
+            Console.WriteLine($"You guessed it in {guesses} times! Congratulations!!");
+            Console.WriteLine("Do you want to play again? yes/not");
+            playAgain = Console.ReadLine();
         }
-
     }
 }
