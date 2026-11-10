@@ -18,6 +18,3 @@ public class Entry
     }
 }
 
-//Date: November 9, 2026
-//Prompt: What was the best part of your day?
-//I spent some time learning C#.

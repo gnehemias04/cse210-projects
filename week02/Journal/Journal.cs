@@ -10,10 +10,18 @@ public class Journal
     }
     public void DisplayAll()
     {
-        foreach (var entry in _entries)
+        if (_entries.Count == 0)
         {
-            entry.Display();
+            Console.WriteLine("Your journal is empty.");
         }
+        else
+        {
+            foreach (var entry in _entries)
+            {
+                entry.Display();
+            }
+        }
+
     }
     public void SaveToFile(string file)
     {
@@ -44,6 +52,13 @@ public class Journal
             Entry entry = new Entry(date, promptText, entryText);
             AddEntry(entry);
         }
+
+    }
+
+    public void DeleteFromFile(string file)
+    {
+        string deleteFile = file + ".txt";
+        File.Delete(deleteFile);
 
     }
 }

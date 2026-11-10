@@ -8,11 +8,11 @@ public class PromptGenerator
 
     public PromptGenerator()
     {
-        _prompts.Add("What is something you are grateful for today?");
-        _prompts.Add("What was the most interesting part of your day?");
-        _prompts.Add("What is something you would like to improve about yourself?");
-        _prompts.Add("Who is someone you admire, and why?");
-        _prompts.Add("What is a challenge you overcame recently?");
+        _prompts.Add("Who was the most interesting person I interacted with today?");
+        _prompts.Add("What was the best part of my day?");
+        _prompts.Add("How did I see the hand of the Lord in my life today?");
+        _prompts.Add("What was the strongest emotion I felt today?");
+        _prompts.Add("If I had one thing I could do over today, what would it be?");
         _prompts.Add("What makes you feel peaceful?");
         _prompts.Add("What is one thing you would like to learn?");
         _prompts.Add("What is a memory that always makes you smile?");
