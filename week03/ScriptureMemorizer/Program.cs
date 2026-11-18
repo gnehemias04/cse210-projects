@@ -70,7 +70,7 @@ class Program
 
                 newScripture = scripture5;
             }
-            else if (option == "0")
+            else if (option == "0" || option == "quit" || option == "exit")
             {
                 finish = "quit";
                 return;
