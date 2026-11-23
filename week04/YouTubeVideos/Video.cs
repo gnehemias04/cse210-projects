@@ -22,12 +22,19 @@ class Video
         _comment.Add(comment);
     }
 
+    public int HowManyComments()
+    {
+        int count;
+        count = _comment.Count();
+        return count;
+    }
+
     public string GetValues()
     {
         string allValues;
         string coments = "";
-        int count;
-        count = _comment.Count();
+        int count = HowManyComments();
+
 
         foreach (Comment comment in _comment)
         {

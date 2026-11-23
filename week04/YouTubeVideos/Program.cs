@@ -5,7 +5,7 @@ class Program
     static void Main(string[] args)
     {
 
-        List<Video> _videos = new List<Video>();
+        List<Video> videos = new List<Video>();
 
         Video video1 = new Video("Gethsemane | October 2024 General Conference", "General Conference of The Church of Jesus Christ", 194);
         Comment gethsemane1 = new Comment("@The_Man_Chidi", "For every like or comment, I'll come back to listen. These are angels singing.");
@@ -16,7 +16,7 @@ class Program
         video1.AddComment(gethsemane2);
         video1.AddComment(gethsemane3);
         video1.AddComment(gethsemane4);
-        _videos.Add(video1);
+        videos.Add(video1);
 
         Video video2 = new Video("Nearer, My God, to Thee", "The Church of Jesus Christ of Latter-day Saints", 228);
         Comment nearer1 = new Comment("@margaretkrings4807", "I had this played at my husbands funeral 3rd September 2021 he died from Alzheimers. I miss him terribly.I play this when visiting his grave and feel closer to him somehow ..We were together over 52 years.");
@@ -27,7 +27,7 @@ class Program
         video2.AddComment(nearer2);
         video2.AddComment(nearer3);
         video2.AddComment(nearer4);
-        _videos.Add(video2);
+        videos.Add(video2);
 
         Video video3 = new Video("Silent Night", "The Church of Jesus Christ of Latter-day Saints", 295);
         Comment silent1 = new Comment("@dhakshan", "The fact that a lot of non-christians (including me) like this song prove that music can transcend any boundaries");
@@ -38,7 +38,7 @@ class Program
         video3.AddComment(silent2);
         video3.AddComment(silent3);
         video3.AddComment(silent4);
-        _videos.Add(video3);
+        videos.Add(video3);
 
         Video video4 = new Video("A Piano’s Purpose", "The Church of Jesus Christ of Latter-day Saints", 494);
         Comment piano1 = new Comment("@ShannonJ-jz3kl", "I'm in tears. I don't know how it is possible to feel identified with a piano but this touched my heart.");
@@ -49,9 +49,9 @@ class Program
         video4.AddComment(piano2);
         video4.AddComment(piano3);
         video4.AddComment(piano4);
-        _videos.Add(video4);
+        videos.Add(video4);
 
-        foreach (Video video in _videos)
+        foreach (Video video in videos)
         {
             Console.WriteLine(video.GetValues());
             Console.WriteLine("");
