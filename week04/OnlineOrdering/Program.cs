@@ -17,7 +17,7 @@ class Program
         order1.AddProduct(product4);
 
         Address address2 = new Address("Juan B Alberdi", "Villa San Martin", "Santiago del Estero", "Argentina");
-        Customer customer2 = new Customer("David Walker", address2);
+        Customer customer2 = new Customer("Lucas Rodriguez", address2);
         Order order2 = new Order(customer2);
         Product productA = new Product("Coffee", 101, 5, 3);
         Product productB = new Product("Tomatto", 109, 2, 4);
@@ -29,7 +29,7 @@ class Program
         order2.AddProduct(productD);
 
         Address address3 = new Address("R Ibirairas", "Guarulhos", "Sao Paulo", "Brasil");
-        Customer customer3 = new Customer("David Walker", address3);
+        Customer customer3 = new Customer("Ruan Monte", address3);
         Order order3 = new Order(customer3);
         Product productE = new Product("Milk", 102, 4, 2);
         Product productF = new Product("Tomatto", 109, 2, 1);
